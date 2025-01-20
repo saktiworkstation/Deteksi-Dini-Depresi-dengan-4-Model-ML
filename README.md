@@ -8,12 +8,21 @@ Proyek ini bertujuan untuk mengatasi tantangan tersebut dengan menggunakan model
 ## Dataset
 - **Sumber Data:** Kaggle ([Link Dataset](https://www.kaggle.com/datasets/anthonytherrien/depression-dataset))
 - **Waktu Pengambilan:** 2023
-- **Deskripsi Kolom:**
-  - `Age`: Usia individu.
-  - `Gender`: Jenis kelamin.
-  - `Education`: Tingkat pendidikan.
-  - `Mental_Health_History`: Riwayat kesehatan mental.
-  - `Depression_Score`: Skor depresi berdasarkan survei.
+- **Label Kolom:**
+  - Age: 
+  - Marital Status
+  - Education Level
+  - Number of Children
+  - Smoking Status
+  - Physical Activity Level
+  - Employment Status
+  - Income
+  - Alcohol Consumption
+  - Dietary Habits
+  - Sleep Patterns
+  - History of Substance Abuse
+  - Family History of Depression
+  - Chronic Medical Conditions
 - **Persiapan Data:**
   - Memeriksa tipe data dan membersihkan nilai null.
   - Melakukan imputasi untuk nilai yang hilang (median untuk numerik dan modus untuk kategori).
@@ -47,11 +56,8 @@ Proyek ini mengimplementasikan empat algoritma machine learning:
 
 ### Evaluasi Model
 Model dievaluasi menggunakan metrik berikut:
-- **Akurasi:** Proporsi prediksi yang benar terhadap total prediksi.
-- **F1 Score:** Harmoni antara presisi dan recall.
-- **Presisi:** Proporsi prediksi positif yang benar.
-- **Recall:** Kemampuan model mendeteksi seluruh kasus positif.
-- **AUC (ROC Curve):** Menilai kemampuan model memisahkan kelas positif dan negatif.
+- **Silhouette Score:** valuasi seberapa baik hasil pengelompokan data.
+- **Accuracy:** Seberapa baik akurasi tingkat depresi yang di tebak.
 
 ### Hyperparameter Tuning
 Dua model terbaik, Random Forest dan Gradient Boosted Tree, dilakukan tuning untuk meningkatkan performa. Hasil tuning menunjukkan bahwa Gradient Boosted Tree adalah model terbaik dengan akurasi, recall, dan F1 Score yang unggul.
