@@ -60,7 +60,7 @@ Model dievaluasi menggunakan metrik berikut:
 - **Accuracy:** Seberapa baik akurasi tingkat depresi yang di tebak.
 
 ### Hyperparameter Tuning
-Dua model terbaik, Random Forest dan Gradient Boosted Tree, dilakukan tuning untuk meningkatkan performa. Hasil tuning menunjukkan bahwa Gradient Boosted Tree adalah model terbaik dengan akurasi, recall, dan F1 Score yang unggul.
+Dua model terbaik, Random Forest dan Gradient Boosted Tree, dilakukan tuning untuk meningkatkan performa. Hasil tuning menunjukkan bahwa Gradient Boosted Tree adalah model terbaik dengan akurasi, dan Silhouette Score.
 
 ## Kesimpulan
 Gradient Boosted Tree dipilih sebagai solusi terbaik untuk mendeteksi dini gejala depresi. Model ini mampu menangkap pola kompleks dalam data dan memberikan akurasi tinggi. Proyek ini menunjukkan bahwa machine learning dapat berkontribusi signifikan dalam mendukung sistem kesehatan mental dengan menyediakan solusi deteksi dini yang praktis dan efisien.
